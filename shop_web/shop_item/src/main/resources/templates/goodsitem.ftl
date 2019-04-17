@@ -519,7 +519,7 @@
                     <div id="spec-list">
                         <ul class="list-h">
                             <#list images as image>
-                                <li><img src="http://192.168.227.130/${image}"> </li>
+                                <li><img src="http://192.168.187.128/${image}"> </li>
                             </#list>
                         </ul>
                     </div>
@@ -726,7 +726,7 @@
         </div>
         <div class="shop_goods_bd_xiangqing_content clearfix">
             <div id="xiangqing_content_1" class="xiangqing_contents clearfix">
-                <p>${goods.ginfo}</p>
+                <p>${goods.goodsdesc}</p>
             </div>
             <div id="xiangqing_content_2" class="xiangqing_contents clearfix">
                 <p>商品评论----22222</p>

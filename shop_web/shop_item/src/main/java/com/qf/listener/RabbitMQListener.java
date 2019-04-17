@@ -32,7 +32,6 @@ public class RabbitMQListener {
             //静态页的名称必须和商品有所关联，最简单的做法就是用商品id作为页面的名字
             String path = this.getClass().getResource("/static/page/").getPath() + goods.getId() + ".html";
             template.process(map, new FileWriter(path));
-
         } catch (Exception e) {
             e.printStackTrace();
         }

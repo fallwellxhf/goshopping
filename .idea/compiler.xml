@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop_back" />
+        <module name="shop_commons" />
+        <module name="shop_entity" />
+        <module name="shop_front" />
+        <module name="shop_item" />
+        <module name="shop_search" />
+        <module name="shop_service" />
+        <module name="shop_service_api" />
+        <module name="shop_service_goods" />
+        <module name="shop_service_search" />
+        <module name="shop_service_user" />
+        <module name="shop_sso" />
+        <module name="shop_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="goshopping" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop_back" options="-parameters" />
+      <module name="shop_commons" options="-parameters" />
+      <module name="shop_entity" options="-parameters" />
+      <module name="shop_front" options="-parameters" />
+      <module name="shop_item" options="-parameters" />
+      <module name="shop_search" options="-parameters" />
+      <module name="shop_service" options="-parameters" />
+      <module name="shop_service_api" options="-parameters" />
+      <module name="shop_service_goods" options="-parameters" />
+      <module name="shop_service_search" options="-parameters" />
+      <module name="shop_service_user" options="-parameters" />
+      <module name="shop_sso" options="-parameters" />
+      <module name="shop_web" options="-parameters" />
+    </option>
+  </component>
+</project>
