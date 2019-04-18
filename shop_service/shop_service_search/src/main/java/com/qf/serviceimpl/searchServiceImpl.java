@@ -24,7 +24,7 @@ public class searchServiceImpl implements  ISearchService{
     @Override
     public List<Goods> searchGoods(String keyword) {
         SolrQuery solrQuery=new SolrQuery();
-        if (keyword == null) {
+        if (keyword == null || "".equals(keyword)) {
             //搜索所有
             solrQuery.setQuery("*:*");
         } else {
@@ -57,9 +57,12 @@ public class searchServiceImpl implements  ISearchService{
                 if (highlighting.containsKey(goods.getId()+"")) {
                     //有高亮的内容
                     Map<String, List<String>> stringListMap = highlighting.get(goods.getId() + "");
-                    //将高亮的内容替换到对象中
-                    String gname=stringListMap.get("goodsname").get(0);
-                    goods.setGoodsname(gname);
+                    if (stringListMap.get("goodsname") != null) {
+                        //将高亮的内容替换到对象中
+                        String gname = stringListMap.get("goodsname").get(0);
+                    System.out.println("高亮商品关键字："+gname);
+                        goods.setGoodsname(gname);
+                    }
                 }
                 list.add(goods);
             }

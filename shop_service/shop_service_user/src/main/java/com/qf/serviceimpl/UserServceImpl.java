@@ -21,6 +21,7 @@ public class UserServceImpl implements IUserService {
 
     @Override
     public User loginUser(String username, String password) {
+//        System.out.println("用户名："+username+"密码："+password);
         UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
        queryWrapper.eq("username",username);

@@ -74,14 +74,15 @@
 				<h3>用户登录</h3>
 			</div>
 			<div class="form-bd">
-				<form action="" method="POST">
+				<form action="/sso/login" method="POST">
+					<input type="hidden" name="returnUrl" th:value="${returnUrl}"/>
 					<dl>
 						<dt>用户名</dt>
-						<dd><input type="text" name="user" class="text" /></dd>
+						<dd><input type="text" name="username" class="text" /></dd>
 					</dl>
 					<dl>
 						<dt>密&nbsp;&nbsp;&nbsp;&nbsp;码</dt>
-						<dd><input type="password" name="pwd" class="text"/></dd>
+						<dd><input type="password" name="password" class="text"/></dd>
 					</dl>
 					<dl>
 						<dt>验证码</dt>
