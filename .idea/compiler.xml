@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop_back" />
+        <module name="shop_cart" />
         <module name="shop_commons" />
         <module name="shop_email" />
         <module name="shop_entity" />
@@ -22,13 +23,11 @@
         <module name="shop_web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="goshopping" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="shop_back" options="-parameters" />
+      <module name="shop_cart" options="-parameters" />
       <module name="shop_commons" options="-parameters" />
       <module name="shop_email" options="-parameters" />
       <module name="shop_entity" options="-parameters" />
